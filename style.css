@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/** SCROLLBAR CUSTOMIZATIONS **/
+/** Yes, I googled how to do it :) **/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;   
+}
+
+
+/** GENERAL STYLES **/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #888;
+}
+
+
+/** HEADER **/
+
+header {
+    height: 100vh;
+
+    background-color: #1f2937;
+    color: white;
+}
+
+nav {
+    margin: 20px 50px;    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav .logo a img {
+    width: 25%;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+
+}
+
+nav ul li a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+    transition: .5s;
+}
+
